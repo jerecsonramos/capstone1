@@ -11,12 +11,147 @@ body {
 
 
 /*end Ids*/
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity:.8;
+  z-index: 1;
+}
+
+.showcase {
+  position: inherit;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+.showcase header {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 50px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+.showcase .logo i {
+  color: #ee7830;
+}
+
+.showcase .logo i:hover {
+  color: #2b2e3b;
+}
+
+.showcase .btn {
+  background-color: #ee7830;
+  border: none;
+}
+
+.showcase .btn:hover {
+  background-color: #fff;
+  color: #ee7830;
+}
+
+.showcase ul li {
+  z-index: 2;
+}
+
+/*.showcase .navbar {
+  position: absolute;
+  padding-right: 50px;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+  font-size: 1.2rem;
+  z-index: 10;
+}*/
+
+/*.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(./images/JLogo.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}*/
+
+.overlay {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #323332;
+}
+
+.text1 {
+  position: relative;
+  z-index: 10;
+}
+
 
 /* NavBar */
 .dark-theme .navbar li {
   font-size: 1rem;
 }
 
+.dark-theme .navbar i:hover {
+  color:#2b2e3b;
+}
+
+.homefloat{
+  position:fixed;
+  width:36px;
+  height:36px;
+  bottom:40px;
+  right:40px;
+  background-color:#ee7830;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #ffff;
+}
+
+.my-float{
+  margin-top:9px;
+  font-size: 1.25rem;
+}
+
+#myVideo {
+  padding: 0;
+  margin-top: 0;
+  position: center;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 /* End NavBar */
 
 /* main */
@@ -39,7 +174,7 @@ body {
 }
 
 .dark-theme.about {
-  background-color: #ee7830;
+  background-color: #be6026;
 }
 
 .dark-theme.about img {
@@ -56,11 +191,39 @@ body {
   color:inherit;
 }
 
+
+.card-body .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:10px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+.card-body .btn:hover {
+  opacity:1;
+}
+
+.card-body .btn:active {
+  transform:translateY(1px);
+}
+
+.card-body .btn-primary {
+  background-color:#ee7830 !important;
+  color:#fff;
+  outline:none !important;
+}
 /*footer codes*/
 .dark-theme {
   padding:50px 0;
   color:#fffeff;
-  background-color:#ee7830;
+  background-color:#be6026;
 }
 
 .dark-theme h3 {
@@ -130,7 +293,7 @@ body {
   border-radius:50%;
   box-shadow:0 0 0 1px rgba(255,255,255,0.4);
   margin:0 8px;
-  color:#ffffff;
+  color:#fff;
 }
 
 .dark-theme .item.social > a:hover {
@@ -144,4 +307,81 @@ body {
   margin-bottom:0;
 }
 
-/*end footer codes
+/*end footer codes */
+
+.pre-footer {
+  color:#313437;
+  background-color:#fff;
+  padding:50px 0;
+}
+
+.pre-footer p {
+  color:#7d8285;
+  line-height:1.5;
+}
+
+.pre-footer h2 {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:25px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color:inherit;
+}
+
+.pre-footer .intro {
+  display: ;
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 25px;
+}
+
+.pre-footer .intro p {
+  margin-bottom:35px;
+}
+
+.pre-footer form {
+  justify-content:center;
+}
+
+.pre-footer form .form-control {
+  background:#eff1f4;
+  border:none;
+  border-radius:3px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:9px;
+  height:45px;
+  margin-right:10px;
+  min-width:250px;
+}
+
+.pre-footer form .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+.pre-footer form .btn:hover {
+  opacity:1;
+}
+
+.pre-footer form .btn:active {
+  transform:translateY(1px);
+}
+
+.pre-footer form .btn-primary {
+  background-color:#ee7830 !important;
+  color:#fff;
+  outline:none !important;
+}

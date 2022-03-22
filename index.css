@@ -9,6 +9,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.navbar {
+  position: relative;
+  z-index: 2;
+}
 
 /*end Ids*/
 .showcase video {
